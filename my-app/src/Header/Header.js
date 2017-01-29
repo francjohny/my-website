@@ -7,7 +7,7 @@ class Header extends Component {
 		<div className="container">
 	    	<input id="toggle" type="checkbox"/>
 		    <label className="toggle-container" htmlFor="toggle">
-		        <span className="button button-toggle">☰</span>
+		        <div className="button button-toggle">☰</div>
 		    </label>
 			<div className="logo">
 				<h1>Francis Johny</h1>

@@ -47,14 +47,17 @@
 @media only screen and (max-width: 768px) {
 
     .logo {
-        display: none;
-        /*padding: 30px 190px;*/
-        /*order: 2;*/
+        flex-grow: 0;
+        order: 1;
     }
 
     .nav .list a:last-child {
         border: none;
         padding-left: 0px;
+    }
+
+    .nav .list a:last-child:hover {
+        border: none;
     }
 
     .nav {
@@ -68,6 +71,12 @@
         font-size: 20px;
     }
 
+    .toggle-container {
+        flex-grow: 1;
+        order: 2;
+        display: flex;
+    }
+
     .button {
         color: white;
         font-size: 25px;
@@ -75,8 +84,7 @@
 
     .button-toggle {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        right: 0;
         margin: 25px;
         cursor: pointer;
         border-radius: 100%;
@@ -85,6 +93,7 @@
 
 	#toggle:checked ~ .nav, .button {
 		display: flex;
+        order: 2;
 	}
 
     #toggle:checked ~ .logo {
@@ -94,6 +103,7 @@
 	#toggle:checked ~ .nav .list{
 		display: flex;
 		flex-direction: column;
+        padding: 50px 70px;
 	}
 
 	#toggle:checked ~ .toggle-container .button-toggle {
@@ -101,9 +111,7 @@
 	}
 
 	#toggle:checked ~ .nav {
-	  margin-bottom: 100px;
 	  pointer-events: auto;
-	  transform: translate(50px, 50px);
 	}
 	#toggle:checked ~ .nav .nav-item {
 	  letter-spacing: 1px;
@@ -111,7 +119,6 @@
 	  line-height: 40px;
 	  margin-top: 0;
 	  opacity: 1;
-	  transform: scaleY(1);
 	  transition: 0.5s, opacity 0.1s;
 	}
 }
