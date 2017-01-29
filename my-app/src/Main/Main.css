@@ -1,0 +1,36 @@
+.main {
+	order: 2;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.main .typewrite {
+	font-size: 60px;
+}
+
+.typewrite {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 200;
+	color: #fff;
+	letter-spacing: 2px;
+	padding: 10px;
+}
+
+.typewrite > .wrap { border-right: 0.08em solid #fff}
+
+* { color:#fff; text-decoration: none;}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .main .highlight {
+        display: none;
+    }
+}
