@@ -1,0 +1,40 @@
+.aside {
+	order: 3;
+	align-self: flex-end;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.list {
+	list-style: none;
+}
+
+.aside .list{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;	
+	width: 100px;
+}
+
+.aside .list a {
+	border-bottom: 1px solid #fff;
+	font-size: 50px;
+	text-align: center;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aside .list a:last-child {
+	border: none;
+}
+
+.aside .list a:hover .fa-linkedin:before,
+.aside .list a:hover .fa-github:before,
+.aside .list a:hover .fa-twitter:before,
+.aside .list a:hover .fa-envelope-o:before {
+    color: #ccc;
+}
