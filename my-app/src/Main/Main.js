@@ -25,7 +25,6 @@ class Main extends Component {
 
 			this.el.innerHTML = '<span className="wrap">'+this.txt+'</span>';
 
-			var that = this;
 			var delta = 200 - Math.random() * 100;
 
 			if (this.isDeleting) { delta /= 2; }
@@ -39,8 +38,8 @@ class Main extends Component {
 				delta = 500;
 			}
 
-			setTimeout(function() {
-				that.tick();
+			setTimeout( () => {
+				this.tick();
 			}, delta);
 		};
 
@@ -58,7 +57,6 @@ class Main extends Component {
   render() {
     return (
 		<div className="main">
-			{/*<strong className="highlight"> {this.state.values} </strong>*/}
 			<a href="" className="typewrite" data-period="2000" data-type='[ "Hello, Im Francis."]'>
 				<span className="wrap"></span>
 			</a>

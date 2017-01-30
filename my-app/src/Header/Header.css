@@ -8,6 +8,7 @@
 }
 
 .logo {
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     padding: 20px;
     flex: 1 0 auto;
@@ -26,14 +27,14 @@
 
 .nav .list a {
 	text-decoration: none;
-	color: white;
+	color: #fff;
 	padding-right: 50px;
 	text-transform: uppercase;
 }
 
 .nav .list a:last-child {
 	padding: 5px 25px;
-	border: 5px solid white;
+	border: 5px solid #fff;
 }
 
 .nav .list a:hover {
@@ -41,7 +42,10 @@
 }
 
 .nav .list a:last-child:hover {
-	border: 5px solid #ccc;
+	border: 5px solid #fff;
+    color: #181818;
+    background-color: #fff;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
@@ -53,11 +57,14 @@
 
     .nav .list a:last-child {
         border: none;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .nav .list a:last-child:hover {
         border: none;
+        color: #ccc;
+        background-color: inherit;
+        font-weight: normal;
     }
 
     .nav {
