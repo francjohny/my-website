@@ -26,7 +26,7 @@ class Header extends Component {
 			        <a className="nav-item" href="#">
 						Resume
 			        </a>
-			        <a className="nav-item" href="#">
+			        <a className="nav-item" href="mailto:francjohny@gmail.com">
 						Contact
 			        </a>
 		        </ul>
