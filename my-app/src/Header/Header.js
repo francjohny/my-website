@@ -17,13 +17,10 @@ class Header extends Component {
 			        <a className="nav-item" href="/">
 						Home
 			        </a>
-			        <a className="nav-item" href="#">
-						Portfolio
-			        </a>
-			        <a className="nav-item" href="#">
+			        <a className="nav-item" href="https://about.me/francisjohny">
 						About
 			        </a>
-			        <a className="nav-item" href="#">
+			        <a className="nav-item" href="https://www.francls.com">
 						Resume
 			        </a>
 			        <a className="nav-item" href="mailto:francjohny@gmail.com">

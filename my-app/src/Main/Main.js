@@ -57,9 +57,15 @@ class Main extends Component {
   render() {
     return (
 		<div className="main">
-			<a href="" className="typewrite" data-period="2000" data-type='[ "Hello, Im Francis."]'>
-				<span className="wrap"></span>
-			</a>
+			<div className="border">
+				<a href="" className="typewrite" data-period="2000" data-type='["Co-Founder and CTO at Vyfrakens.", 
+																				"Genius Software Wizard.", 
+																				"Creator of opportunities.", 
+																				"Head of global trends and insights.",
+																				"Connoisseur."]'>
+					<span className="wrap"></span>
+				</a>
+			</div>
 		</div>
 	);
   }
