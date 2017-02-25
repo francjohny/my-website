@@ -1,14 +1,6 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import "~normalize.css/normalize.css";
 
 .App {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	background: url('../public/workplace.jpg') repeat-x center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
 }

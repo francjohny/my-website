@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
-import './Header.css';
+import React, {Component} from "react";
+import Link from 'react-router/Link';
+import Typewriter from '../Typewriter/Typewriter.js';
+import "./Header.css";
 
 class Header extends Component {
-	render() {
-	return (
-		<div className="container">
-	    	<input id="toggle" type="checkbox"/>
-		    <label className="toggle-container" htmlFor="toggle">
-		        <div className="button button-toggle">☰</div>
-		    </label>
-			<div className="logo">
-				<h1>Francis Johny</h1>
-			</div>
-			<nav className="nav">
-		        <ul className="list">
-			        <a className="nav-item" href="/">
-						Home
-			        </a>
-			        <a className="nav-item" href="https://about.me/francisjohny">
-						About
-			        </a>
-			        <a className="nav-item" href="https://www.francls.com">
-						Resume
-			        </a>
-			        <a className="nav-item" href="mailto:francjohny@gmail.com">
-						Contact
-			        </a>
-		        </ul>
-			</nav>
-		</div>
-	);
-	}
+    render() {
+        return (
+            <header>
+                <h2 className="header-logo">Francis Johny</h2>
+                <Typewriter/>
+                <nav className="header-nav">
+                    <ul className="header-list">
+                        <Link className="header-nav-item" to="/"> Home </Link>
+                        <Link className="header-nav-item" to="/portfolio"> Portfolio </Link>
+                        <Link className="header-nav-item" to="/books"> Books </Link>
+                        <a className="header-nav-item" href="http://www.francls.com"> About </a>
+                        <a className="header-nav-item" href="mailto:francjohny@gmail.com"> Contact </a>
+                    </ul>
+                </nav>
+            </header>
+        );
+    }
 }
 
 export default Header;

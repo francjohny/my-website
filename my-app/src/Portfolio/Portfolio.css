@@ -1,0 +1,30 @@
+.portfolio {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app {
+    background-color: transparent;
+    flex: 1 1 calc(100% / 6 - 20px);
+    border: 0.3px solid grey;
+    text-align: center;
+}
+
+.main-letter {
+    font-size: 16em;
+}
+
+.app:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 930px) {
+    .portfolio > div {
+        flex: 1 1 auto;
+    }
+    .main-letter {
+        font-size: 10em;
+    }
+}

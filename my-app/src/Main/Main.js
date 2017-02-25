@@ -1,74 +1,41 @@
 import React, { Component } from 'react';
+import Match from 'react-router/Match';
+import Miss from 'react-router/Miss';
+import Portfolio from '../Portfolio/Portfolio.js';
+import Books from '../Books/Books.js';
+import About from '../About/About.js';
+import Contact from '../Contact/Contact.js';
 import './Main.css';
 
 class Main extends Component {
-	componentWillMount() {
-		var TxtType = function(el, toRotate, period) {
-			this.toRotate = toRotate;
-			this.el = el;
-			this.loopNum = 0;
-			this.period = parseInt(period, 10) || 2000;
-			this.txt = '';
-			this.tick();
-			this.isDeleting = false;
-		};
-
-		TxtType.prototype.tick = function() {
-			var i = this.loopNum % this.toRotate.length;
-			var fullTxt = this.toRotate[i];
-
-			if (this.isDeleting) {
-				this.txt = fullTxt.substring(0, this.txt.length - 1);
-			} else {
-				this.txt = fullTxt.substring(0, this.txt.length + 1);
-			}
-
-			this.el.innerHTML = '<span className="wrap">'+this.txt+'</span>';
-
-			var delta = 200 - Math.random() * 100;
-
-			if (this.isDeleting) { delta /= 2; }
-
-			if (!this.isDeleting && this.txt === fullTxt) {
-				delta = this.period;
-				this.isDeleting = true;
-			} else if (this.isDeleting && this.txt === '') {
-				this.isDeleting = false;
-				this.loopNum++;
-				delta = 500;
-			}
-
-			setTimeout( () => {
-				this.tick();
-			}, delta);
-		};
-
-		window.onload = function() {
-			var elements = document.getElementsByClassName('typewrite');
-			for (var i=0; i<elements.length; i++) {
-				var toRotate = elements[i].getAttribute('data-type');
-				var period = elements[i].getAttribute('data-period');
-				if (toRotate) {
-					new TxtType(elements[i], JSON.parse(toRotate), period);
-				}
-			}
-		};
-	}
-  render() {
-    return (
-		<div className="main">
-			<div className="border">
-				<a href="" className="typewrite" data-period="2000" data-type='["Co-Founder and CTO at Vyfrakens.", 
-																				"Genius Software Wizard.", 
-																				"Creator of opportunities.", 
-																				"Head of global trends and insights.",
-																				"Connoisseur."]'>
-					<span className="wrap"></span>
-				</a>
+	render() {
+	return (
+	<main>
+		<Match exactly pattern='/' render={() => (
+			<Portfolio/>
+		)}/>
+		<Match pattern="/portfolio" render={() => (
+			<Portfolio/>
+		)}/>
+		<Match pattern="/books" render={() => (
+			<Books/>
+		)}/>
+		<Match pattern="/about" render={() => (
+			<About/>
+		)}/>
+		<Match pattern="/contact" render={() => (
+			<Contact/>
+		)}/>
+		<Miss render={({location}) => (
+			<div>
+				<h3>
+					Error! No matches for <code>{location.pathname}</code>
+				</h3>
 			</div>
-		</div>
+		)}/>
+	</main>
 	);
-  }
+	}
 }
 
 export default Main;
