@@ -7,23 +7,29 @@ class Footer extends Component {
 	render() {
 	return (
 		<footer>
-			<h2 className="footer-logo">Francis Johny</h2>
-			<div className="social">
-				<strong>Keep in touch</strong>
-				<Social color="#fff"/>
-			</div>
+			<h2 className="footer-logo footer-item-spacing">Francis Johny</h2>
 			<nav className="footer-nav">
 				<ul className="footer-list">
-					<Link className="footer-nav-item" to="/"> Home </Link>
-					<Link className="footer-nav-item" to="/portfolio"> Portfolio </Link>
-					<Link className="footer-nav-item" to="/books"> Books </Link>
-					<a className="footer-nav-item" href="http://www.francls.com"> About </a>
-                    <a className="footer-nav-item" href="mailto:francjohny@gmail.com"> Contact </a>	
+					<a className="footer-nav-item footer-item-spacing" href="http://www.francls.com">
+						<i className="fa fa-user footer-icon" aria-hidden="true"></i>
+						<span> About </span>
+					</a>
+					<Link className="footer-nav-item footer-item-spacing" to="/portfolio">
+						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
+						<span> Portfolio </span>
+					</Link>
+					<Link className="footer-nav-item footer-item-spacing" to="/blog">
+						<i className="fa fa-pencil footer-icon" aria-hidden="true"></i>
+						<span> Blog </span>
+					</Link>
+					<a className="footer-nav-item footer-item-spacing" href="mailto:francjohny@gmail.com">
+						<i className="fa fa-paper-plane-o footer-icon" aria-hidden="true"></i>
+						<span> Contact </span>
+					</a>
 				</ul>
 			</nav>
-			<div className="copyright-info">
-				<h5>© Francis Johny 2017</h5>
-			</div>
+			<Social color="#fff"/>
+			<h5 className="copyright-info">© 2017. All rights reserved.</h5>
 		</footer>
 	);
 	}

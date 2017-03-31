@@ -1,0 +1,34 @@
+.home {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promo-desk {
+    flex: 1 1 calc(100% / 3 - 20px);
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    background: url("../../public/headphones.jpg") center center / 100% no-repeat;
+}
+
+.promo-piano {
+    flex: 1 1 calc(100% / 3 - 20px);
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    background: url("../../public/piano.png") bottom center / 100% no-repeat;
+}
+
+.promo-chess {
+    flex: 1 1 calc(100% / 3 - 20px);
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    background: url("../../public/chess.jpg") center center / 100% no-repeat;
+}
+@media only screen and (max-width: 930px) {
+    .home > div {
+        flex: 1 1 auto;
+    }
+}

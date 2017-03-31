@@ -6,17 +6,21 @@ class Social extends Component {
         return (
             <nav className="social">
                 <ul className="social-list">
-                    <a href="https://in.linkedin.com/in/francis-johny" style={{"color": this.props.color}}>
-                        <li><i className="fa fa-linkedin" aria-hidden="true"></i></li>
+                    <a className="social-list-item footer-item-spacing" href="https://in.linkedin.com/in/francis-johny" style={{"color": this.props.color}}>
+                        <i className="social-icon fa fa-linkedin" aria-hidden="true"></i>
+                        <span className="social-heading"> Linkedin </span>
                     </a>
-                    <a href="https://github.com/francjohny" style={{"color": this.props.color}}>
-                        <li><i className="fa fa-github" aria-hidden="true"></i></li>
+                    <a className="social-list-item footer-item-spacing" href="https://github.com/francjohny" style={{"color": this.props.color}}>
+                        <i className="social-icon fa fa-github" aria-hidden="true"></i>
+                        <span className="social-heading"> GitHub </span>
                     </a>
-                    <a href="https://twitter.com/13urstskill" style={{"color": this.props.color}}>
-                        <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
+                    <a className="social-list-item footer-item-spacing" href="https://twitter.com/13urstskill" style={{"color": this.props.color}}>
+                        <i className="social-icon fa fa-twitter" aria-hidden="true"></i>
+                        <span className="social-heading"> Twitter </span>
                     </a>
-                    <a href="mailto:francjohny@gmail.com" style={{"color": this.props.color}}>
-                        <li><i className="fa fa-envelope-o" aria-hidden="true"></i></li>
+                    <a className="social-list-item footer-item-spacing" href="mailto:francjohny@gmail.com" style={{"color": this.props.color}}>
+                        <i className="social-icon fa fa-envelope-o" aria-hidden="true"></i>
+                        <span className="social-heading"> Mail </span>
                     </a>
                 </ul>
             </nav>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Match from 'react-router/Match';
 import Miss from 'react-router/Miss';
+import Home from '../Home/Home.js';
 import Portfolio from '../Portfolio/Portfolio.js';
 import Books from '../Books/Books.js';
 import About from '../About/About.js';
@@ -12,12 +13,12 @@ class Main extends Component {
 	return (
 	<main>
 		<Match exactly pattern='/' render={() => (
-			<Portfolio/>
+			<Home/>
 		)}/>
 		<Match pattern="/portfolio" render={() => (
 			<Portfolio/>
 		)}/>
-		<Match pattern="/books" render={() => (
+		<Match pattern="/blog" render={() => (
 			<Books/>
 		)}/>
 		<Match pattern="/about" render={() => (
