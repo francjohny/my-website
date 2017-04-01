@@ -6,9 +6,9 @@ class Header extends Component {
     render() {
         return (
             <header>
+                <Link className="header-logo" to="/"> </Link>
                 <nav className="header-nav">
                     <ul className="header-list">
-                        <Link className="header-logo" to="/"> </Link>
                         <Link className="header-nav-item" to="/"> Home </Link>
                         <Link className="header-nav-item" to="/portfolio"> Portfolio </Link>
                         <Link className="header-nav-item" to="/blog"> Blog </Link>

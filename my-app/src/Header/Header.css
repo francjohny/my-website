@@ -1,6 +1,12 @@
-.header-nav {
-    border-bottom: 0.4px solid white;
+header{
     background-color: black;
+    display: flex;
+    border-bottom: 0.4px solid white;
+    padding-top: 20px;
+}
+
+.header-nav {
+    flex: 1;
 }
 
 .header-logo {
@@ -11,20 +17,20 @@
     background-image: url("../../public/Yin_yang.svg");
     background-position: center center;
     background-repeat: no-repeat;
+    padding-left: 50px;
 }
 
-header .header-nav .header-list {
+.header-list {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     display: flex;
     justify-content: space-around;
     padding: 5px;
     margin-top: 0;
-    padding-top: 20px;
     overflow: auto;
 }
 
-header .header-nav .header-list .header-nav-item {
+.header-nav-item {
     text-decoration: none;
     padding-top: 5px;
     color: #fff;
@@ -39,7 +45,7 @@ header .header-nav .header-list .header-nav-item {
     text-decoration: underline;
 }
 
-header .header-nav .header-list .header-nav-item:before {
+.header-nav-item:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -52,20 +58,25 @@ header .header-nav .header-list .header-nav-item:before {
     transition: all 0.2s ease-in-out 0s;
 }
 
-header .header-nav .header-list .header-nav-item:hover:before {
+.header-nav-item:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
 
 @media only screen and (max-width: 705px) {
-    header .header-nav .header-list {
+    header {
+        flex-direction: column;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .header-list {
         white-space: nowrap;
         display: block;
-    }
-    .header-logo {
-        display: flex;
-        margin: 0 auto;
-        margin-bottom: 20px;
+        padding-left: 20px;
     }
 }
 
