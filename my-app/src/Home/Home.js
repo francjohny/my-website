@@ -5,9 +5,15 @@ class Home extends Component {
     render() {
         return (
             <section className="home">
-                <div className="promo-desk"></div>
-                <div className="promo-piano"></div>
-                <div className="promo-chess"></div>
+                <a className="promo promo-desk" href="#">
+                    <span className="promo-description">iCode</span>
+                </a>
+                <a className="promo promo-piano" href="#">
+                    <span className="promo-description">iMusic</span>
+                </a>
+                <a className="promo promo-chess" href="#">
+                    <span className="promo-description">iChess</span>
+                </a>
             </section>
         );
     }

@@ -3,6 +3,17 @@
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .8);
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-button {
+    text-decoration: none;
+    color: #fff;
+    border: solid white;
+    padding: 10px 20px;
 }
 
 .logo {
