@@ -3,7 +3,7 @@ import './Typewriter.css';
 import Link from 'react-router/Link';
 
 class Main extends Component {
-    componentWillMount() {
+    componentDidMount() {
         var TxtType = function (el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -46,16 +46,14 @@ class Main extends Component {
             }, delta);
         };
 
-        window.onload = function () {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
             }
-        };
+        }
     }
 
     render() {

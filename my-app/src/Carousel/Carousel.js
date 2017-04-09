@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import Typewriter from '../Typewriter/Typewriter.js'
+import Home from '../Home/Home.js';
+import Random from '../Random/Random.js';
+import { Carousel } from 'react-bootstrap';
+import butters from '../../public/butters.png';
+import siri1 from '../../public/apple_siri_cash_1.jpg';
+import siri2 from '../../public/apple_siri_cash_2.jpg';
+import desk from '../../public/headphones.jpg';
 
-class Carousel extends Component {
+class PromoCarousel extends Component {
     render() {
         return (
-            <section className="carousel">
-                <h2 className="logo">Francis Johny</h2>
-                <Typewriter/>
-                <a className="github-button" href="https://github.com/francjohny/my-website" data-style="mega" aria-label="Star francjohny/my-website on GitHub">View on GitHub</a>
-            </section>
+            <Carousel>
+                <Carousel.Item>
+                    <Home/>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img alt="900x500" height={500} src={siri1}/>
+                    <img alt="900x500" height={500} src={siri2}/>
+                </Carousel.Item>
+                {/*<Carousel.Item>*/}
+                    {/*<img alt="900x500" height={500} src={butters}/>*/}
+                {/*</Carousel.Item>*/}
+            </Carousel>
         );
     }
 }
 
-export default Carousel;
+export default PromoCarousel;

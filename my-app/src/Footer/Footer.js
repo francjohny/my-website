@@ -30,7 +30,7 @@ class Footer extends Component {
 			</nav>
 			<Social color="#fff"/>
 			<h5 className="copyright-info">© 2017. All rights reserved.</h5>
-			<h5 className="copyright-info">Powered by React.js</h5>
+			<h5 className="copyright-info">Powered by React.</h5>
 		</footer>
 	);
 	}

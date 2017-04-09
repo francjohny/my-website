@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import Match from 'react-router/Match';
 import Miss from 'react-router/Miss';
 import Home from '../Home/Home.js';
+import Promo from '../Promo/Promo.js';
+import Carousel from '../Carousel/Carousel.js';
 import Portfolio from '../Portfolio/Portfolio.js';
-import Books from '../Books/Books.js';
+import Quote from '../Quote/Quote.js';
+import Blog from '../Blog/Blog.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import './Main.css';
@@ -13,13 +16,20 @@ class Main extends Component {
 	return (
 	<main>
 		<Match exactly pattern='/' render={() => (
-			<Home/>
+			<div>
+				<Carousel/>
+				<Promo/>
+				<Quote/>
+			</div>
 		)}/>
 		<Match pattern="/portfolio" render={() => (
-			<Portfolio/>
+			<div>
+				<Home/>
+				<Portfolio/>
+			</div>
 		)}/>
 		<Match pattern="/blog" render={() => (
-			<Books/>
+			<Blog/>
 		)}/>
 		<Match pattern="/about" render={() => (
 			<About/>
