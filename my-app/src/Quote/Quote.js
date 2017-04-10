@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Quote.css';
+import disney from '../../public/disney.png';
 
 class Books extends Component {
     render() {
         return (
             <section className="books">
 	            <blockquote> 
-		            <p> It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.
-		            	<strong className="quotee"> - Steve Jobs </strong>
+		            <p> All our dreams can come true, if we have the courage to pursue them.
+                        <strong className="quotee"> <img src={disney} className="disney" alt="disney"/> </strong>
 	            	</p>
 				</blockquote>
             </section>
