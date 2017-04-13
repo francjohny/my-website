@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import './Promo.css';
 
-class Home extends Component {
+class Promo extends Component {
     render() {
         return (
             <section className="promos">
-                <a className="promo promo-desk" href="#">
-                    <span className="promo-description">iCode</span>
+                <a className="promo" href="#">
+                    {/*<span className="promo-description">Leopold Butters Stotch </span>*/}
                 </a>
-                <a className="promo promo-piano" href="#">
-                    <span className="promo-description">iMusic</span>
+                <a className="promo" href="#">
+                    {/*<span className="promo-description">Eric Cartman</span>*/}
                 </a>
-                <a className="promo promo-chess" href="#">
-                    <span className="promo-description">iChess</span>
+                <a className="promo" href="#">
+                    {/*<span className="promo-description">Kenny McCormick</span>*/}
                 </a>
             </section>
         );
     }
 }
 
-export default Home;
+export default Promo;

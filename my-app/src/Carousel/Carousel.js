@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Carousel.css';
-import Home from '../Home/Home.js';
 import Random from '../Random/Random.js';
 import { Carousel } from 'react-bootstrap';
 import es6 from '../../public/es6.png';
@@ -10,9 +9,6 @@ class PromoCarousel extends Component {
     render() {
         return (
             <Carousel interval="50000">
-                <Carousel.Item animateIn={true} animateOut={true}>
-                    <Home/>
-                </Carousel.Item>
                 <Carousel.Item>
                     <section className="iphone-ad">
                         <img alt="900x500" height={500} src={siri}/>
