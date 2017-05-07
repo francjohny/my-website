@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.c43ebc38.css",
-  "main.css.map": "static/css/main.c43ebc38.css.map",
-  "main.js": "static/js/main.689eca3f.js",
-  "main.js.map": "static/js/main.689eca3f.js.map",
+  "main.css": "static/css/main.180675da.css",
+  "main.css.map": "static/css/main.180675da.css.map",
+  "main.js": "static/js/main.175a08b9.js",
+  "main.js.map": "static/js/main.175a08b9.js.map",
   "static/media/Yin_yang.svg": "static/media/Yin_yang.9857ad85.svg",
   "static/media/bot.png": "static/media/bot.3d3bfe9d.png",
   "static/media/butters.png": "static/media/butters.8c648fd2.png",
@@ -12,8 +12,5 @@
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
-  "static/media/react.svg": "static/media/react.f13bd972.svg",
-  "static/media/ted.svg": "static/media/ted.86eb79b8.svg",
-  "static/media/tesla.svg": "static/media/tesla.048068b6.svg",
   "static/media/workplace.jpg": "static/media/workplace.b59197c2.jpg"
 }
