@@ -7,7 +7,7 @@ class Footer extends Component {
 	render() {
 	return (
 		<footer>
-			<h2 className="footer-logo footer-item-spacing">Francis Johny</h2>
+			<Link className="footer-logo footer-item-spacing" to="/">Francis Johny</Link>
 			<nav className="footer-nav">
 				<ul className="footer-list">
 					<a className="footer-nav-item footer-item-spacing" href="http://www.francls.com">
@@ -18,7 +18,7 @@ class Footer extends Component {
 						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
 						<span> Portfolio </span>
 					</Link>
-					<Link className="footer-nav-item footer-item-spacing" to="/blog">
+					<Link className="footer-nav-item footer-item-spacing" to="#">
 						<i className="fa fa-pencil footer-icon" aria-hidden="true"></i>
 						<span> Blog </span>
 					</Link>
@@ -28,7 +28,7 @@ class Footer extends Component {
 					</a>
 				</ul>
 			</nav>
-			<Social color="#000"/>
+			<Social color="#fff"/>
 			<h5 className="copyright-info">© 2017. All rights reserved.</h5>
 			<h5 className="copyright-info">Powered by React.</h5>
 		</footer>

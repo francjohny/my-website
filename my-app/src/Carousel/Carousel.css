@@ -1,20 +1,3 @@
-.iphone-ad {
-  background-color: #F9F8FF;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.iphone-ad .caption {
-  font-family: "Work Sans", sans-serif;
-  font-size: 4em;
-  color: black; }
-
-.iphone-ad .caption p {
-  font-size: 12px;
-  line-height: 1.5em;
-  margin-bottom: 18px; }
-
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot");
@@ -250,10 +233,3 @@
     padding-bottom: 30px; }
   .carousel-indicators {
     bottom: 20px; } }
-
-@media only screen and (max-width: 705px) {
-  .iphone-ad {
-    padding: 120px 0;
-    flex-direction: column; }
-  .iphone-ad .caption {
-    font-size: 30px; } }

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Social from '../Social/Social.js';
 import './About.css';
 
 class About extends Component {
@@ -15,7 +14,6 @@ class About extends Component {
                     <p>Hi, I’m a 23-year-old undergraduate in Computer Science.</p>
                     <strong>Feel free to contact me for freelance project.</strong>
                 </section>
-                <Social color="#000"/>
             </div>
         );
     }

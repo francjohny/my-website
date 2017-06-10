@@ -7,6 +7,8 @@ import Blog from '../Blog/Blog.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import PageNotFound from '../404/404.js';
+import TransHeader from '../TransHeader/TransHeader.js';
+import Footer from '../Footer/Footer.js';
 import './Redirect.css';
 
 class Redirect extends Component {
@@ -14,19 +16,48 @@ class Redirect extends Component {
 		return (
 		<main>
 			<Match exactly pattern='/' render={() => (
-				<Home/>
+				<div>
+					<TransHeader/>
+					<Home/>
+					<Footer/>
+				</div>
 			)}/>
 			<Match pattern="/portfolio" render={() => (
-				<Portfolio/>
+				<div>
+					<TransHeader/>
+					<Portfolio/>
+					<Footer/>
+				</div>
+			)}/>
+			<Match pattern="/portfolio-es6" render={() => (
+				<div>
+					<iframe src="https://www.icloud.com/keynote/0Vs2kAmcjlUOkXyStYL6TWfHw?embed=true"
+							width="100%"
+							height="740"
+							frameborder="0"
+							allowfullscreen="1"
+							referrer="no-referrer"
+					/>
+					<Footer/>
+				</div>
 			)}/>
 			<Match pattern="/blog" render={() => (
-				<Blog/>
+				<div>
+					<Blog/>
+					<Footer/>
+				</div>
 			)}/>
 			<Match pattern="/about" render={() => (
-				<About/>
+				<div>
+					<About/>
+					<Footer/>
+				</div>
 			)}/>
 			<Match pattern="/contact" render={() => (
-				<Contact/>
+				<div>
+					<Contact/>
+					<Footer/>
+				</div>
 			)}/>
 			<Miss render={({location}) => (
 				<PageNotFound />

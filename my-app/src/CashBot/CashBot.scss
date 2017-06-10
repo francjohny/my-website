@@ -1,0 +1,36 @@
+.iphone-ad {
+  padding-top: 100px;
+  background-color: #F9F8FF;
+  height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //box-shadow: inset 1em -1em 100em 10em #000;
+}
+
+//.iphone-ad:hover {
+//    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+//}
+
+.iphone-ad .caption {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5em;
+  color: black;
+}
+
+.iphone-ad .caption p {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 705px) {
+  .iphone-ad {
+    padding: 100px 0;
+    flex-direction: column;
+  }
+
+  .iphone-ad .caption {
+    font-size: 30px;
+  }
+}

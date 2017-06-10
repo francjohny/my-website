@@ -1,17 +1,17 @@
 import React, {Component} from "react";
 import Link from 'react-router/Link';
-import "./Header.css";
+import "./TransHeader.css";
+import '../Header/Header.css';
 
-class Header extends Component {
+class TransHeader extends Component {
     render() {
         return (
-            <header className="header">
-                <Link className="header-logo" to="/"> </Link>
+            <header className="trans-header">
                 <nav className="header-nav">
                     <ul className="header-list">
                         <Link className="header-nav-item" to="/"> Home </Link>
                         <Link className="header-nav-item" to="/portfolio"> Portfolio </Link>
-                        <Link className="header-nav-item" to="/blog"> Blog </Link>
+                        <Link className="header-nav-item" to="#"> Blog </Link>
                         <a className="header-nav-item" href="http://www.francls.com"> About </a>
                         <a className="header-nav-item" href="mailto:francjohny@gmail.com"> Contact </a>
                     </ul>
@@ -21,4 +21,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default TransHeader;

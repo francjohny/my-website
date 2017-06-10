@@ -2,14 +2,22 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 1);
+    //background-color: #f2f2f2;
     padding: 0 30px;
-    color: #333;
+    color: #fff;
+    //color: #333;
     letter-spacing: 1px;
 }
 
 .footer-logo {
     font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .footer-list {
@@ -23,7 +31,7 @@ footer {
 }
 
 .footer-nav-item {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: flex;
 }
@@ -36,7 +44,7 @@ footer {
     margin-right: 5px;
 }
 
-footer .footer-nav .footer-list a:hover {
+footer .footer-nav .footer-list a:hover, .footer-logo:hover {
     opacity: 0.5;
 }
 
