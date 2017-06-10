@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Social.css';
+import PropTypes from 'prop-types';
 
 class Social extends Component {
     render() {
@@ -27,7 +28,7 @@ class Social extends Component {
         );
     }
     propTypes: {
-        color: React.PropTypes.string
+        color: PropTypes.string
     }
 }
 

@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import './Carousel.css';
 import Random from '../Random/Random.js';
 import { Carousel } from 'react-bootstrap';
-import es6 from '../../public/es6.png';
-import siri from '../../public/apple_siri_cash_2.png';
+import es6 from './es6.png';
+import bot from './bot.png';
 
-class PromoCarousel extends Component {
+class MyCarousel extends Component {
     render() {
         return (
-            <Carousel interval="50000">
+            <Carousel interval={3000}>
                 <Carousel.Item>
                     <section className="iphone-ad">
-                        <img alt="900x500" height={500} src={siri}/>
+                        <img alt="900x500" height={500} src={bot}/>
                         <section className="caption">
                             Introducing <br/>
                             <strong>Cash Bot</strong>
@@ -29,4 +29,4 @@ class PromoCarousel extends Component {
     }
 }
 
-export default PromoCarousel;
+export default MyCarousel;

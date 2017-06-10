@@ -6,9 +6,9 @@ class Random extends Component {
         return (
             <section className="random"
                      style={{
-                         "background": "url(" + this.props.background + ") repeat-x center",
-                         "background-size": this.props.size,
-                         "background-color": this.props.color
+                         "background": "url(" + this.props.background + ") no-repeat center",
+                         "backgroundSize": this.props.size,
+                         "backgroundColor": this.props.color
                      }}
             />
         );

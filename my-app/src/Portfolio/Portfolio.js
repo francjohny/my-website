@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
-import './Portfolio.css';
+import React, {Component} from 'react';
+import Carousel from '../Carousel/Carousel.js';
+import ProjectCard from '../ProjectCard/ProjectCard.js';
 
 class Portfolio extends Component {
     render() {
         return (
-            <section className="portfolio">
-            	<div className="app"><span className="main-letter">A</span></div>
-                <div className="app"><span className="main-letter">B</span></div>
-                <div className="app"><span className="main-letter">C</span></div>
-                <div className="app"><span className="main-letter">D</span></div>
-                <div className="app"><span className="main-letter">E</span></div>
+            <section>
+                <Carousel/>
+                <ProjectCard color="#011A27"/>
+                {/*<ProjectCard color="#33164B"/>
+                <ProjectCard color="#8D230F"/>
+                <ProjectCard color="#021C1E"/>
+                <ProjectCard color="#004465"/>
+                <ProjectCard color="#C99E10"/>
+                <ProjectCard color="#07575B"/>
+                <ProjectCard color="#46211A"/>
+                <ProjectCard color="#193F4C"/>
+                <ProjectCard color="#2A3132"/>*/}
             </section>
         );
     }

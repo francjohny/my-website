@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Post from '../Post/Post.js'
-import './Posts.css';
 
 class Posts extends Component {
     render() {
         return (
-            <section className="posts">
+            <section>
                 <Post/>
                 <Post/>
                 <Post/>

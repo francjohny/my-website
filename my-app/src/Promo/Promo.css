@@ -1,58 +1,44 @@
 .promos {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-}
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap; }
 
 .promo {
-    border: 2px solid white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 calc(100% / 3 - 20px);
-    text-align: center;
-    width: 300px;
-    height: 150px;
-}
+  border: 2px solid white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(100% / 3 - 20px);
+  text-align: center;
+  width: 300px;
+  height: 150px; }
 
 .promo:nth-child(n+1) {
-    border-right: 0;
-}
+  border-right: 0; }
 
 .promo:last-child {
-    border-right: 2px solid white;
-}
+  border-right: 2px solid white; }
 
 .promo-description {
-    color: #000;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1rem;
-}
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem; }
 
 .promo:nth-child(1) {
-    background: url("../../public/butters.png") center center/20% no-repeat;
-}
+  background: url("../../public/tesla.svg") center center/20% no-repeat; }
 
 .promo:nth-child(2) {
-    background: url("../../public/eric.png") center center/30% no-repeat;
-}
+  background: url("../../public/ted.svg") center center/30% no-repeat; }
 
 .promo:nth-child(3) {
-    background: url("../../public/kenny.png") center center/20% no-repeat;
-}
+  background: url("../../public/react.svg") center center/20% no-repeat; }
 
 @media only screen and (max-width: 930px) {
-    .promos > .promo {
-        flex: 1 1 auto;
-    }
-
-    .promo:nth-child(n+1) {
-        border-bottom: 0;
-        border-right: 2px solid white;
-    }
-
-    .promo:last-child {
-        border-bottom: 2px solid white;
-    }
-}
+  .promos > .promo {
+    flex: 1 1 auto; }
+  .promo:nth-child(n+1) {
+    border-bottom: 0;
+    border-right: 2px solid white; }
+  .promo:last-child {
+    border-bottom: 2px solid white; } }
