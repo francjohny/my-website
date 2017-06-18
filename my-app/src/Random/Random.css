@@ -1,2 +1,6 @@
 .random {
   height: 740px; }
+
+@media only screen and (max-width: 705px) {
+  .random {
+    height: 400px; } }

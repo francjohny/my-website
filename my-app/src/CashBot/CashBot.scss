@@ -8,6 +8,10 @@
   //box-shadow: inset 1em -1em 100em 10em #000;
 }
 
+.iphone {
+  height: 500px;
+}
+
 //.iphone-ad:hover {
 //    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 //}
@@ -25,12 +29,20 @@
 }
 
 @media only screen and (max-width: 705px) {
+
   .iphone-ad {
-    padding: 100px 0;
+    height: 700px;
+    padding: 0;
     flex-direction: column;
+  }
+
+  .iphone {
+    height: 400px;
+    //padding-top: 150px;
   }
 
   .iphone-ad .caption {
     font-size: 30px;
+    padding: 0;
   }
 }
