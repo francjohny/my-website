@@ -3,7 +3,6 @@ import Match from 'react-router/Match';
 import Miss from 'react-router/Miss';
 import Home from '../Home/Home.js';
 import Portfolio from '../Portfolio/Portfolio.js';
-import Blog from '../Blog/Blog.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import PageNotFound from '../404/404.js';
@@ -38,12 +37,6 @@ class Redirect extends Component {
 							allowfullscreen="1"
 							referrer="no-referrer"
 					/>
-					<Footer/>
-				</div>
-			)}/>
-			<Match pattern="/blog" render={() => (
-				<div>
-					<Blog/>
 					<Footer/>
 				</div>
 			)}/>

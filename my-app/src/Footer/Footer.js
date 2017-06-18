@@ -18,10 +18,6 @@ class Footer extends Component {
 						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
 						<span> Portfolio </span>
 					</Link>
-					<Link className="footer-nav-item footer-item-spacing" to="#">
-						<i className="fa fa-pencil footer-icon" aria-hidden="true"></i>
-						<span> Blog </span>
-					</Link>
 					<a className="footer-nav-item footer-item-spacing" href="mailto:francjohny@gmail.com">
 						<i className="fa fa-paper-plane-o footer-icon" aria-hidden="true"></i>
 						<span> Contact </span>
