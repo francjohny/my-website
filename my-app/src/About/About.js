@@ -1,18 +1,38 @@
 import React, {Component} from 'react';
 import './About.css';
+import Link from 'react-router/Link';
 
 class About extends Component {
     render() {
         return (
             <div className="about">
                 <section className="title">
-                    <h3><strong> Francis </strong> Johny </h3>
-                    <p>Software Engineer</p>
+                    Hello World
                 </section>
-                <section className="intro">
-                    <h4>About me</h4>
-                    <p>Hi, I’m a 23-year-old undergraduate in Computer Science.</p>
-                    <strong>Feel free to contact me for freelance project.</strong>
+                <section className="about-intro">
+                    <p>
+                        I'm Francis Johny! I’m a 23-year-old Computer Science undergraduate from India.
+                        I used to be an intern at
+                        <a style={{color: "#2200CC", marginRight: "0"}}
+                           className="header-nav-item"
+                           href="http://www.ey.com/">
+                            &nbsp;EY&nbsp;
+                        </a>
+                        working as a Data Analyst.
+                        I currently work as a Big Data Engineer at
+                        <a style={{color: "#2200CC", marginRight: "0", textTransform: "none"}}
+                           className="header-nav-item"
+                           href="https://www.qburst.com/">
+                            &nbsp;QBurst&nbsp;
+                        </a>.
+                        In my spare time, I build, explore and teach at Khan Academy.
+                        If you're reading this, we should be friends!
+                        <Link style={{color: "#2200CC", marginRight: "0", textTransform: "none"}}
+                              className="header-nav-item"
+                              to="/contact">
+                            &nbsp;Say Hi!&nbsp;
+                        </Link>
+                    </p>
                 </section>
             </div>
         );

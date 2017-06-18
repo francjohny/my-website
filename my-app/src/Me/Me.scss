@@ -1,7 +1,11 @@
 .me {
   background: url("workplace.jpg") repeat-x center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+}
+
+.me-link {
+  text-decoration: none;
 }
 
 .me-content {

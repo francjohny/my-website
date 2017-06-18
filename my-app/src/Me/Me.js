@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Link from 'react-router/Link';
 import './Me.css';
 
 class Me extends Component {
@@ -6,7 +7,9 @@ class Me extends Component {
         return (
             <div className="me">
                 <section className="me-content">
-                    <h2 className="name">Francis Johny</h2>
+                    <Link className="me-link" to="/about">
+                        <h2 className="name">Francis Johny</h2>
+                    </Link>
                 </section>
             </div>
         );

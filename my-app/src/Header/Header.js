@@ -3,6 +3,7 @@ import Link from 'react-router/Link';
 import "./Header.css";
 
 class Header extends Component {
+
     render() {
         return (
             <header className="header">

@@ -1,2 +1,34 @@
 .about {
-  padding-left: 30px; }
+  background-color: #fff;
+  padding: 300px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900px;
+  font-size: 120px;
+}
+
+.about-intro {
+  width: 70%;
+}
+
+.contact-intro p, .about-intro p{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 10px;
+  text-align: center;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+}
+
+.contact-intro > a, .about-intro > a {
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #ddd;
+}

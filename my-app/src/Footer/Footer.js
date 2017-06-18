@@ -10,10 +10,10 @@ class Footer extends Component {
 			<Link className="footer-logo footer-item-spacing" to="/">Francis Johny</Link>
 			<nav className="footer-nav">
 				<ul className="footer-list">
-					<a className="footer-nav-item footer-item-spacing" href="http://www.francls.com">
+					<Link className="footer-nav-item footer-item-spacing" to="/about">
 						<i className="fa fa-user footer-icon" aria-hidden="true"></i>
 						<span> About </span>
-					</a>
+					</Link>
 					<Link className="footer-nav-item footer-item-spacing" to="/portfolio">
 						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
 						<span> Portfolio </span>

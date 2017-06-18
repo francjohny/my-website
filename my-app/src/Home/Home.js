@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Carousel from '../Carousel/Carousel.js';
+import Me from '../Me/Me.js';
 
 class Home extends Component {
     render() {
         return (
             <section>
-                <Carousel/>
+                <Me/>
             </section>
         );
     }

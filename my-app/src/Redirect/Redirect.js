@@ -16,14 +16,14 @@ class Redirect extends Component {
 		<main>
 			<Match exactly pattern='/' render={() => (
 				<div>
-					<TransHeader/>
+					<TransHeader color="#fff"/>
 					<Home/>
 					<Footer/>
 				</div>
 			)}/>
 			<Match pattern="/portfolio" render={() => (
 				<div>
-					<TransHeader/>
+					<TransHeader color="#000"/>
 					<Portfolio/>
 					<Footer/>
 				</div>
@@ -42,13 +42,15 @@ class Redirect extends Component {
 			)}/>
 			<Match pattern="/about" render={() => (
 				<div>
+					<TransHeader color="#000"/>
 					<About/>
 					<Footer/>
 				</div>
 			)}/>
 			<Match pattern="/contact" render={() => (
 				<div>
-					<Contact/>
+					<TransHeader color="#ddd"/>
+					<Contact color="fff"/>
 					<Footer/>
 				</div>
 			)}/>
