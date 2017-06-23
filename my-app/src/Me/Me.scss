@@ -9,7 +9,7 @@
 }
 
 .me-content {
-  height: 740px;
+  height: 762px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,10 +52,10 @@
 
 @media only screen and (max-width: 705px) {
   .me-content {
-    height: 400px;
+    height: 500px;
   }
 
   .name {
-    font-size: 60px;
+    font-size: 80px;
   }
 }

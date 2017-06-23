@@ -32,3 +32,9 @@
   text-transform: lowercase;
   color: #ddd;
 }
+
+@media only screen and (max-width: 705px) {
+  .about {
+    padding: 150px 0;
+  }
+}

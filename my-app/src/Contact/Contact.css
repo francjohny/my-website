@@ -31,3 +31,7 @@
 .contact-hover:hover:before {
   visibility: visible;
   transform: scaleX(1); }
+
+@media only screen and (max-width: 705px) {
+  .contact {
+    padding: 200px 0; } }
