@@ -14,13 +14,13 @@ class Footer extends Component {
 						<i className="fa fa-user footer-icon" aria-hidden="true"></i>
 						<span> About </span>
 					</Link>
-					<Link className="footer-nav-item footer-item-spacing" to="/portfolio">
-						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
-						<span> Portfolio </span>
-					</Link>
 					<Link className="footer-nav-item footer-item-spacing" to="/contact">
 						<i className="fa fa-paper-plane-o footer-icon" aria-hidden="true"></i>
 						<span> Contact </span>
+					</Link>
+					<Link className="footer-nav-item footer-item-spacing" to="/resume">
+						<i className="fa fa-camera-retro footer-icon" aria-hidden="true"></i>
+						<span> Resume </span>
 					</Link>
 				</ul>
 			</nav>
