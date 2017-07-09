@@ -12,7 +12,7 @@ class TransHeader extends Component {
                         <Link className="logo" to="/" style={{color: this.props.color}}> Francis Johny </Link>
                         <Link className="header-nav-item" to="/about" style={{color: this.props.color}}> About </Link>
                         <Link className="header-nav-item" to="/contact" style={{color: this.props.color}}> Contact </Link>
-                        <Link className="header-nav-item" to="/resume" style={{color: this.props.color}}> Resume </Link>
+                        <a className="header-nav-item" href="http://www.francls.com" style={{color: this.props.color}}> Resume </a>
                     </ul>
                 </nav>
             </header>
