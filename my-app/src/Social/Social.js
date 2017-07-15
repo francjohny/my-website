@@ -19,10 +19,6 @@ class Social extends Component {
                         <i className="social-icon fa fa-twitter" aria-hidden="true"></i>
                         <span className="social-heading"> Twitter </span>
                     </a>
-                    <a className="social-list-item footer-item-spacing" href="mailto:francjohny@gmail.com" style={{"color": this.props.color}}>
-                        <i className="social-icon fa fa-envelope-o" aria-hidden="true"></i>
-                        <span className="social-heading"> Mail </span>
-                    </a>
                 </ul>
             </nav>
         );
