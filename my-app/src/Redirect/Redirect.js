@@ -32,6 +32,18 @@ class Redirect extends Component {
 					<Footer/>
 				</div>
 			)}/>
+			<Match pattern="/portfolio-blockchain" render={() => (
+				<div>
+					<iframe src="https://www.icloud.com/keynote/0e1UN2MfHz6cnETziv6Sc-Msg?embed=true"
+							width="100%"
+							height="740"
+							frameborder="0"
+							allowfullscreen="1"
+							referrer="no-referrer"
+					/>
+					<Footer/>
+				</div>
+			)}/>
 			<Match pattern="/about" render={() => (
 				<div>
 					<TransHeader color="#000"/>
