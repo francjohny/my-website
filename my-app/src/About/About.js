@@ -4,6 +4,19 @@ import Link from 'react-router/Link';
 
 class About extends Component {
     render() {
+
+        function getBirthday(dateString) {
+            var today = new Date();
+            var birthdate = new Date(dateString);
+            var age = today.getFullYear() - birthdate.getFullYear();
+            var m = today.getMonth() - birthdate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        var birthday = getBirthday("June 24, 1994 02:00:00");
         return (
             <div className="about">
                 <section className="title">
@@ -11,7 +24,7 @@ class About extends Component {
                 </section>
                 <section className="about-intro">
                     <p>
-                        I'm Francis Johny! I’m a 23-year-old Computer Science undergraduate from India.
+                        I'm Francis Johny! I’m a { birthday }-year-old Computer Science undergraduate from India.
                         In my spare time, I build, explore and teach at Khan Academy.
                         I currently work as a Big Data Engineer at
                         <a style={{color: "#2200CC", marginRight: "0", textDecoration: "none"}}
