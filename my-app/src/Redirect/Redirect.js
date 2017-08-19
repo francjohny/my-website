@@ -17,7 +17,6 @@ class Redirect extends Component {
 				<div>
 					<TransHeader color="#000"/>
 					<Portfolio/>
-					<Footer/>
 				</div>
 			)}/>
 			<Match pattern="/portfolio-es6" render={() => (
@@ -48,14 +47,12 @@ class Redirect extends Component {
 				<div>
 					<TransHeader color="#000"/>
 					<About/>
-					<Footer/>
 				</div>
 			)}/>
 			<Match pattern="/contact" render={() => (
 				<div>
 					<TransHeader color="#ddd"/>
 					<Contact color="fff"/>
-					<Footer/>
 				</div>
 			)}/>
 			<Miss render={({location}) => (
