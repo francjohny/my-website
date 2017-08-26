@@ -6,9 +6,7 @@ class Portfolio extends Component {
     render() {
         return (
             <section>
-                <Carousel/>
-                <div className="r">
-                </div>
+                <Carousel />
             </section>
         );
     }

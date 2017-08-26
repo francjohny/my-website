@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Match from 'react-router/Match';
 import Miss from 'react-router/Miss';
+import DisplayPicture from '../DisplayPicture/DisplayPicture.js';
 import Portfolio from '../Portfolio/Portfolio.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
@@ -15,6 +16,13 @@ class Redirect extends Component {
 		return (
 		<main>
 			<Match exactly pattern="/" render={() => (
+				<div>
+					<TransHeader color="#000"/>
+					<DisplayPicture/>
+					<TransFooter backgroundColor="#f8fdff"/>
+				</div>
+			)}/>
+			<Match exactly pattern="/portfolio" render={() => (
 				<div>
 					<TransHeader color="#000"/>
 					<Portfolio/>
