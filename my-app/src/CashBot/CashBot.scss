@@ -25,9 +25,13 @@
 }
 
 .iphone-ad .caption p {
-  font-size: 15px;
+  font-size: 0.4em;
   line-height: 1.5em;
   margin-bottom: 18px;
+}
+
+.strike-throgh {
+  text-decoration: line-through;
 }
 
 @keyframes hideshow {

@@ -12,7 +12,7 @@ class CashBot extends Component {
                         Introducing <br/>
                         <strong>Cash Bot</strong>
                     </h7>
-                    <p>The first bot to send money.</p>
+                    <p>The <span className="strike-throgh">first</span> bot to send money.</p>
                 </section>
             </section>
         );
