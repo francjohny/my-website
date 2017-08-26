@@ -1,11 +1,10 @@
 .iphone-ad {
   padding-top: 100px;
   background-color: #F9F8FF;
-  height: 640px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
-  //box-shadow: inset 1em -1em 100em 10em #000;
 }
 
 .iphone {
@@ -20,6 +19,7 @@
   font-family: "Work Sans", sans-serif;
   font-size: 5em;
   color: black;
+  animation: hideshow 10s ease infinite;
 }
 
 .iphone-ad .caption p {
@@ -28,10 +28,17 @@
   margin-bottom: 18px;
 }
 
+@keyframes hideshow {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  15% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
 @media only screen and (max-width: 705px) {
 
   .iphone-ad {
-    height: 700px;
+    height: 800px;
     padding: 0;
     flex-direction: column;
   }
@@ -42,7 +49,7 @@
   }
 
   .iphone-ad .caption {
-    font-size: 30px;
+    font-size: 2.5em;
     padding: 0;
   }
 }

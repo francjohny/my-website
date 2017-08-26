@@ -8,8 +8,10 @@ class CashBot extends Component {
             <section className="iphone-ad">
                 <img alt="900x500" className="iphone" src={bot}/>
                 <section className="caption">
-                    Introducing <br/>
-                    <strong>Cash Bot</strong>
+                    <h7>
+                        Introducing <br/>
+                        <strong>Cash Bot</strong>
+                    </h7>
                     <p>The first bot to send money.</p>
                 </section>
             </section>

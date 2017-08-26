@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -37,7 +37,7 @@ footer {
 .footer-icon {
   margin-right: 5px; }
 
-footer .footer-nav .footer-list a:hover, .footer-logo:hover {
+.footer .footer-nav .footer-list a:hover, .footer-logo:hover {
   opacity: 0.5; }
 
 @media only screen and (min-width: 736px) and (max-width: 1024px) {
@@ -47,7 +47,7 @@ footer .footer-nav .footer-list a:hover, .footer-logo:hover {
     padding-bottom: 10px; } }
 
 @media only screen and (max-width: 736px) {
-  footer {
+  .footer {
     flex-direction: column; }
   .footer-list {
     flex-direction: column; }

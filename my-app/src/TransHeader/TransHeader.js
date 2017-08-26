@@ -9,10 +9,10 @@ class TransHeader extends Component {
             <header className="trans-header">
                 <nav className="header-nav">
                     <ul className="header-list">
-                        <Link className="logo" to="/" style={{color: this.props.color}}> Francis Johny </Link>
-                        <Link className="header-nav-item" to="/about" style={{color: this.props.color}}> About </Link>
-                        <Link className="header-nav-item" to="/contact" style={{color: this.props.color}}> Contact </Link>
-                        <a className="header-nav-item" href="http://www.francls.com" style={{color: this.props.color}}> Resume </a>
+                        <li className="logo"><Link to="/" style={{color: this.props.color}}> Francis Johny </Link></li>
+                        <li className="header-nav-item"><Link to="/about" style={{color: this.props.color}}> About </Link></li>
+                        <li className="header-nav-item"><Link to="/contact" style={{color: this.props.color}}> Contact </Link></li>
+                        <li className="header-nav-item"><a href="http://www.francls.com" style={{color: this.props.color}}> Resume </a></li>
                     </ul>
                 </nav>
             </header>

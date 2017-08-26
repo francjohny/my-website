@@ -15,7 +15,7 @@
     width: 28px;
     height: 28px;
     background-size: 28px 28px;
-    background-image: url("../../public/Yin_yang.svg");
+    background-image: url("Yin_yang.svg");
     background-position: center center;
     background-repeat: no-repeat;
     padding-left: 50px;
@@ -27,21 +27,25 @@
 
 .header-list {
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
-    padding: 5px;
+    padding-top: 15px;
     margin-top: 0;
-    overflow: auto;
+    //overflow: auto;
+    list-style-type: none;
 }
 
 .header-nav-item {
-    text-decoration: none;
     padding-top: 5px;
-    margin-right: 50px;
-    text-transform: uppercase;
+}
+
+.header-nav-item a {
     position: relative;
+    margin-right: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .header-nav-item Link.header-nav-item {
@@ -50,7 +54,7 @@
     text-decoration: underline;
 }
 
-.header-nav-item:before {
+.header-nav-item a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -63,7 +67,7 @@
     transition: all 0.2s ease-in-out 0s;
 }
 
-.header-nav-item:hover:before {
+.header-nav-item a:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -79,11 +83,16 @@
     }
 
     .header-list {
-        white-space: nowrap;
+        //white-space: nowrap;
         display: block;
-        padding-left: 40px;
-        font-size: 12px;
+        text-align: center;
+        //padding-left: 40px;
+        font-size: 0.8em;
     }
 
-
+    .header-nav-item {
+        display: inline-block;
+        justify-content: space-around;
+        text-align: center;
+    }
 }

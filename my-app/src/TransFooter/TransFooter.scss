@@ -1,0 +1,33 @@
+.trans-footer {
+  display: flex;
+  justify-content: center;
+  font-size: .8rem;
+  padding: 30px 0;
+}
+
+.trans-footer nav ul {
+  color: #575757;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.trans-footer nav ul li {
+  //display: flex;
+}
+
+.trans-footer nav ul li a {
+  text-decoration: none;
+  color: #575757;
+}
+
+.trans-footer nav ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+@media only screen and (max-width: 705px) {
+
+}

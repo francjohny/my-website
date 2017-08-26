@@ -6,7 +6,7 @@ import './Footer.css';
 class Footer extends Component {
 	render() {
 	return (
-		<footer>
+		<footer className="footer">
 			<Link className="footer-logo footer-item-spacing" to="/">Francis Johny</Link>
 			<nav className="footer-nav">
 				<ul className="footer-list">

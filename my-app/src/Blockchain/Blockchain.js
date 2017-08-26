@@ -1,13 +1,20 @@
 import React, {Component} from "react";
-import Random from '../Random/Random.js';
 import Link from 'react-router/Link';
-import blockchain from './blockchain.png';
+import blockchain from './blockchain.svg';
+import blockchainLogo from './blockchain-logo.svg';
+import './Blockchain.css';
 
 class Blockchain extends Component {
     render() {
         return (
-        <Link to="/portfolio-blockchain">
-            <Random background={blockchain} size="100%" />
+        <Link to="/portfolio/blockchain">
+            <section className="blockchain">
+                <img src={blockchainLogo} alt="blockchain logo" className="blockchain-logo"/>
+                <div className="blockchain-heading">
+                    <img src={blockchain} alt="blockchain" className="blockchain-image"/>
+                    <span className="blockchain-caption"> The Hype, The Opportunity And The Future Of Money</span>
+                </div>
+            </section>
         </Link>
         );
     }

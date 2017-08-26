@@ -9,7 +9,7 @@ class Social extends Component {
                 <ul className="social-list">
                     <a className="social-list-item footer-item-spacing" href="https://in.linkedin.com/in/francis-johny" style={{"color": this.props.color}}>
                         <i className="social-icon fa fa-linkedin" aria-hidden="true"></i>
-                        <span className="social-heading"> Linkedin </span>
+                        <span className="social-heading"> LinkedIn </span>
                     </a>
                     <a className="social-list-item footer-item-spacing" href="https://github.com/francjohny" style={{"color": this.props.color}}>
                         <i className="social-icon fa fa-github" aria-hidden="true"></i>

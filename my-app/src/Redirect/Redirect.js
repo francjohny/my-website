@@ -6,6 +6,7 @@ import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import PageNotFound from '../404/404.js';
 import TransHeader from '../TransHeader/TransHeader.js';
+import TransFooter from '../TransFooter/TransFooter.js';
 import Footer from '../Footer/Footer.js';
 import './Redirect.css';
 
@@ -17,11 +18,13 @@ class Redirect extends Component {
 				<div>
 					<TransHeader color="#000"/>
 					<Portfolio/>
+					<TransFooter backgroundColor="#f8fdff"/>
 				</div>
 			)}/>
-			<Match pattern="/portfolio-es6" render={() => (
+			<Match pattern="/portfolio/es6" render={() => (
 				<div>
-					<iframe src="https://www.icloud.com/keynote/0Vs2kAmcjlUOkXyStYL6TWfHw?embed=true"
+					<iframe title="ES6 Presentation"
+							src="https://www.icloud.com/keynote/0Vs2kAmcjlUOkXyStYL6TWfHw?embed=true"
 							width="100%"
 							height="740"
 							frameborder="0"
@@ -31,9 +34,10 @@ class Redirect extends Component {
 					<Footer/>
 				</div>
 			)}/>
-			<Match pattern="/portfolio-blockchain" render={() => (
+			<Match pattern="/portfolio/blockchain" render={() => (
 				<div>
-					<iframe src="https://www.icloud.com/keynote/0e1UN2MfHz6cnETziv6Sc-Msg?embed=true"
+					<iframe title="Blockchain Presentation"
+							src="https://www.icloud.com/keynote/0e1UN2MfHz6cnETziv6Sc-Msg?embed=true"
 							width="100%"
 							height="740"
 							frameborder="0"
