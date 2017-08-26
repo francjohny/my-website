@@ -6,7 +6,7 @@ class CashBot extends Component {
     render() {
         return (
             <section className="iphone-ad">
-                <img alt="900x500" className="iphone" src={bot}/>
+                <img alt="cash bot" className="iphone" src={bot}/>
                 <section className="caption">
                     <h7>
                         Introducing <br/>

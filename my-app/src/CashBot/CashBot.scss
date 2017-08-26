@@ -8,7 +8,9 @@
 }
 
 .iphone {
-  height: 500px;
+  // width: 400px; // for svg
+  height: 530px;
+  // display: block; // for svg
 }
 
 //.iphone-ad:hover {
@@ -44,12 +46,13 @@
   }
 
   .iphone {
-    height: 400px;
-    //padding-top: 150px;
+    height: 540px;
+    // width: 400px; // for svg
+    // padding-top: 150px; // for svg
   }
 
   .iphone-ad .caption {
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding: 0;
   }
 }
