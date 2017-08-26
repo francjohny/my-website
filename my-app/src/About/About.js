@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './About.css';
 import Link from 'react-router/Link';
+import TransFooter from '../TransFooter/TransFooter.js';
 
 class About extends Component {
     render() {
@@ -26,7 +27,7 @@ class About extends Component {
                     <p>
                         I'm Francis Johny! I’m a { birthday }-year-old Computer Science undergraduate from India.
                         In my spare time, I build, explore and teach at Khan Academy.
-                        I currently work as a Big Data Engineer at
+                        I currently work as a Software Developer at
                         <a style={{color: "#2200CC", marginRight: "0", textDecoration: "none"}}
                            href="https://www.qburst.com/">
                             &nbsp;QBurst&nbsp;
@@ -38,6 +39,7 @@ class About extends Component {
                         </Link>
                     </p>
                 </section>
+                <TransFooter backgroundColor="#fff"/>
             </div>
         );
     }
