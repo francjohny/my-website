@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.3ab1fb05.css",
   "main.css.map": "static/css/main.3ab1fb05.css.map",
-  "main.js": "static/js/main.d9aff2ae.js",
-  "main.js.map": "static/js/main.d9aff2ae.js.map",
+  "main.js": "static/js/main.0f95b4dd.js",
+  "main.js.map": "static/js/main.0f95b4dd.js.map",
   "static/media/Yin_yang.svg": "static/media/Yin_yang.9857ad85.svg",
   "static/media/blockchain-logo.svg": "static/media/blockchain-logo.570324b9.svg",
   "static/media/blockchain.svg": "static/media/blockchain.f4607118.svg",
@@ -15,5 +15,5 @@
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
-  "static/media/me-with-mouth.svg": "static/media/me-with-mouth.01ebfc3a.svg"
+  "static/media/me-with-mouth.svg": "static/media/me-with-mouth.36ed5bfd.svg"
 }
