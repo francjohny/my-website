@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Typewriter.css';
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 
 class Main extends Component {
     componentDidMount() {

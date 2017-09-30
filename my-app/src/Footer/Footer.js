@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Social from '../Social/Social.js';
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 class Footer extends Component {

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 import blockchain from './blockchain.svg';
 import blockchainLogo from './blockchain-logo.svg';
 import './Blockchain.css';

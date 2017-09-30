@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './404.css';
 import butters from './butters.png';
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 
 class PageNotFound extends Component {
     render() {

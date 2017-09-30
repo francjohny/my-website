@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './DisplayPicture.css';
-import me from './me-without-glasses.svg';
+import me from './me.svg';
 
 class DisplayPicture extends Component {
     render() {

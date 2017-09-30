@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './About.css';
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 import TransFooter from '../TransFooter/TransFooter.js';
 
 class About extends Component {

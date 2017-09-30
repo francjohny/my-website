@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 import es6 from './es6.svg';
 import './ES6.css';
 

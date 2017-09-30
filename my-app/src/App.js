@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Main from './Redirect/Redirect.js';
-import Router from 'react-router/BrowserRouter';
+import Main from './Main/Main.js';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
     render() {

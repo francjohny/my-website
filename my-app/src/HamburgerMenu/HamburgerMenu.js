@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Link from 'react-router/Link';
+import { Link } from 'react-router-dom';
 import "./HamburgerMenu.css";
 
 class HamburgerMenu extends Component {
