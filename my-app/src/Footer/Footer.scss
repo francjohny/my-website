@@ -49,6 +49,10 @@
     opacity: 0.5;
 }
 
+.copyright-info {
+    font-family: 'Raleway', sans-serif;
+}
+
 @media only screen and (min-width: 736px) and (max-width: 1024px) {
     .footer-list {
         flex-direction: column;
