@@ -75,4 +75,6 @@ class Redirect extends Component {
 	}
 }
 
+const Home = () => 
+
 export default Redirect;
