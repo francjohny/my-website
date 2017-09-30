@@ -42,10 +42,17 @@
 }
 
 .header-nav-item a {
+    font-weight: 600;
+    font-size: small;
     position: relative;
     margin-right: 50px;
     text-decoration: none;
     text-transform: uppercase;
+    opacity: 0.45;
+}
+
+.header-nav-item a:hover {
+    opacity: 1;
 }
 
 .header-nav-item Link.header-nav-item {
