@@ -8,7 +8,7 @@ import CashBot from '../CashBot/CashBot.js';
 class MyCarousel extends Component {
     render() {
         return (
-            <Carousel interval={3000}>
+            <Carousel interval={3500}>
                 <Carousel.Item>
                     <CashBot/>
                 </Carousel.Item>
