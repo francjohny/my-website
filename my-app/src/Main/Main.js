@@ -30,6 +30,12 @@ class Main extends Component {
 						"src": "https://www.icloud.com/keynote/0e1UN2MfHz6cnETziv6Sc-Msg?embed=true"
 					})
 				}}/>
+				<Route path="/portfolio/big-data" component={() => {
+					return MoviePage({
+						"title": "Big Data Analytics",
+						"src": "https://www.youtube.com/embed/zFNbIp_MnxA?ecver=2"
+					})
+				}}/>
 				<Route path="/about" component={AboutPage}/>
 				<Route path="/contact" component={ContactPage}/>
 				<Route component={PageNotFound}/>
@@ -71,6 +77,26 @@ const TalkPage = ({ title, src, width="100%", height="740" }) => {
 						allowFullScreen="1"
 						referrer="no-referrer"
 				/>
+				<Footer/>
+			</div>
+		</DocumentTitle>
+	)
+};
+
+const MoviePage = ({title, src}) => {
+	return (
+		<DocumentTitle title={title}>
+			<div>
+				<div style={{"position":"relative", "height":"0", "paddingBottom" :"56.25%"}}>
+					<iframe title={title}
+							src={src}
+							width="640"
+							height="360"
+							frameBorder="0"
+							style={{"position":"absolute", "width":"100%", "height":"100%", "left":"0"}}
+							allowFullScreen="true">
+					</iframe>
+				</div>
 				<Footer/>
 			</div>
 		</DocumentTitle>

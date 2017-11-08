@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './Carousel.css';
 import {Carousel} from 'react-bootstrap';
 import Blockchain from '../Blockchain/Blockchain.js';
+import BigDataAnalytics from '../BigDataAnalytics/BigDataAnalytics.js';
 import ES6 from '../ES6/ES6.js';
 import CashBot from '../CashBot/CashBot.js';
 
@@ -17,6 +18,9 @@ class MyCarousel extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Blockchain/>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <BigDataAnalytics/>
                 </Carousel.Item>
             </Carousel>
         );
