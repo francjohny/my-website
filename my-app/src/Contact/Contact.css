@@ -1,8 +1,16 @@
+.slideIn-appear {
+  transform: translate3D(100%, 0, 0); }
+
+.slideIn-appear.slideIn-appear-active {
+  transform: translate(0%);
+  transition: transform 250ms ease-in-out; }
+
 .contact {
   background: #000;
   color: #fff;
   padding: 300px 0;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .contact-hover {
   text-decoration: none;
