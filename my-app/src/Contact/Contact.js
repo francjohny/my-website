@@ -7,7 +7,7 @@ class Contact extends Component {
     render() {
         return (
             <CSSTransitionGroup
-                style={{width:"100%"}}
+                style={{width:"100%", backgroundColor: "#000"}}
                 transitionName="slideIn"
                 transitionAppear={true}
                 transitionAppearTimeout={250}

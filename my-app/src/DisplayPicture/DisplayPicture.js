@@ -7,7 +7,7 @@ class DisplayPicture extends Component {
     render() {
         return (
             <div className="display-picture">
-                <NavLink to="/about"><img className="my-picture" src={me} alt="my pic"/></NavLink>
+                <NavLink to="/contact"><img className="my-picture" src={me} alt="my pic"/></NavLink>
             </div>
         );
     }

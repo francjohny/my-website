@@ -36,8 +36,7 @@ class Main extends Component {
 						"src": "https://www.youtube.com/embed/zFNbIp_MnxA?ecver=2"
 					})
 				}}/>
-				<Route path="/about" component={AboutPage}/>
-				<Route path="/contact" component={ContactPage}/>
+				<Route path="/contact" component={AboutContactPage}/>
 				<Route component={PageNotFound}/>
 			</Switch>
 		</main>
@@ -103,17 +102,8 @@ const MoviePage = ({title, src}) => {
 	)
 };
 
-const AboutPage = () => (
-	<DocumentTitle title='About'>
-		<div>
-			<TransHeader logoColor="#000" color="#000"/>
-			<About/>
-		</div>
-	</DocumentTitle>
-);
-
-const ContactPage = () => (
-	<DocumentTitle title='Contact'>
+const AboutContactPage = () => (
+	<DocumentTitle title='About | Contact'>
 		<div>
 			<TransHeader logoColor="#000" color="#ddd"/>
 			<div className="about-contact">
