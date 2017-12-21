@@ -1,3 +1,10 @@
+.slideOut-appear {
+  transform: translate3D(-100%, 0, 0); }
+
+.slideOut-appear.slideOut-appear-active {
+  transform: translate(0%);
+  transition: transform 250ms ease-in-out; }
+
 .about {
   background-color: #fff;
   padding: 300px 0;
