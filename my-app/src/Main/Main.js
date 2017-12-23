@@ -47,7 +47,7 @@ class Main extends Component {
 const HomePage = () => (
 	<DocumentTitle title='Francis Johny'>
 		<div>
-			<TransHeader logoColor="#000" color="#000"/>
+			<TransHeader color="#000"/>
 			<DisplayPicture/>
 			<TransFooter backgroundColor="#f8fdff"/>
 		</div>
@@ -57,7 +57,7 @@ const HomePage = () => (
 const PortfolioPage = () => (
 	<DocumentTitle title='Portfolio'>
 		<div>
-			<TransHeader logoColor="#000" color="#000"/>
+			<TransHeader color="#000"/>
 			<Portfolio/>
 			<TransFooter backgroundColor="#f8fdff"/>
 		</div>
@@ -105,7 +105,7 @@ const MoviePage = ({title, src}) => {
 const AboutContactPage = () => (
 	<DocumentTitle title='About | Contact'>
 		<div>
-			<TransHeader logoColor="#000" color="#ddd"/>
+			<TransHeader color="#ddd"/>
 			<div className="about-contact">
 				<About/>
 				<Contact color="fff"/>

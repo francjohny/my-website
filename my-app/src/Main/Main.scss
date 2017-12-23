@@ -6,10 +6,6 @@ main {
     display: flex;
 }
 
-.logo a {
-    color: #000;
-}
-
 @media only screen and (max-width: 930px) {
     .about-contact {
         flex-direction: column;
