@@ -49,7 +49,7 @@ const HomePage = () => (
 		<div>
 			<TransHeader color="#000"/>
 			<DisplayPicture/>
-			<TransFooter backgroundColor="#f8fdff"/>
+			<About/>
 		</div>
 	</DocumentTitle>
 );
@@ -107,7 +107,6 @@ const AboutContactPage = () => (
 		<div>
 			<TransHeader color="#ddd"/>
 			<div className="about-contact">
-				<About/>
 				<Contact color="fff"/>
 			</div>
 		</div>
