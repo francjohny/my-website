@@ -1,11 +1,15 @@
 .display-picture {
-  background-color: #fff;
   padding-top: 70px;
+  background: linear-gradient(45deg, black 0%, black 26%, transparent 26%), linear-gradient(-45deg, black 0%, black 27%, transparent 27%);
 }
 
 .my-logo {
+  font-family: 'Fugaz One',sans-serif,cursive;
+  font-size: 140px;
+  font-weight:700;
+  text-align: center;
   display: block;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   height: auto;
 }
@@ -20,5 +24,9 @@
 @media only screen and (max-width: 705px) {
   .my-picture {
     width: 75%;
+  }
+  .my-logo {
+    font-size: 70px;
+    width: 100%;
   }
 }
