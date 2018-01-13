@@ -4,6 +4,7 @@ import me from './me-without-glasses.svg';
 import { NavLink } from 'react-router-dom';
 
 class DisplayPicture extends Component {
+
     render() {
         return (
             <div className="display-picture">

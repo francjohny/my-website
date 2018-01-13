@@ -16,7 +16,7 @@ class About extends Component {
                 transitionLeave={false}>
                 <div className="about">
                     <section className="title">
-                        Hello World
+                        Hello.
                     </section>
                     <section className="about-intro">
                         <p>
