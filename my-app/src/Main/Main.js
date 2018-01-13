@@ -36,7 +36,8 @@ class Main extends Component {
 						"src": "https://www.youtube.com/embed/zFNbIp_MnxA?ecver=2"
 					})
 				}}/>
-				<Route path="/contact" component={AboutContactPage}/>
+				<Route path="/about" component={AboutPage}/>
+				<Route path="/contact" component={ContactPage}/>
 				<Route component={PageNotFound}/>
 			</Switch>
 		</main>
@@ -47,9 +48,9 @@ class Main extends Component {
 const HomePage = () => (
 	<DocumentTitle title='Francis Johny'>
 		<div>
-			<TransHeader color="#000"/>
+			<TransHeader logoColor="#000" color="#000"/>
 			<DisplayPicture/>
-			<About/>
+			<TransFooter backgroundColor="#fff"/>
 		</div>
 	</DocumentTitle>
 );
@@ -57,7 +58,7 @@ const HomePage = () => (
 const PortfolioPage = () => (
 	<DocumentTitle title='Portfolio'>
 		<div>
-			<TransHeader color="#000"/>
+			<TransHeader logoColor="#000" color="#000"/>
 			<Portfolio/>
 			<TransFooter backgroundColor="#f8fdff"/>
 		</div>
@@ -102,12 +103,23 @@ const MoviePage = ({title, src}) => {
 	)
 };
 
-const AboutContactPage = () => (
-	<DocumentTitle title='About | Contact'>
+const AboutPage = () => (
+	<DocumentTitle title='About'>
 		<div>
-			<TransHeader color="#ddd"/>
+			<TransHeader logoColor="#000" color="#000"/>
 			<div className="about-contact">
-				<Contact color="fff"/>
+				<About color="#fff"/>
+			</div>
+		</div>
+	</DocumentTitle>
+);
+
+const ContactPage = () => (
+	<DocumentTitle title='Contact'>
+		<div>
+			<TransHeader logoColor="#fff" color="#ddd"/>
+			<div className="about-contact">
+				<Contact color="#fff"/>
 			</div>
 		</div>
 	</DocumentTitle>

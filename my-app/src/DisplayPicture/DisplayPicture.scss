@@ -1,6 +1,6 @@
 .display-picture {
   padding-top: 70px;
-  background: linear-gradient(45deg, black 0%, black 26%, transparent 26%), linear-gradient(-45deg, black 0%, black 27%, transparent 27%);
+  //background: linear-gradient(45deg, black 0%, black 26%, transparent 26%), linear-gradient(-45deg, black 0%, black 27%, transparent 27%);
 }
 
 .my-logo {
@@ -16,15 +16,12 @@
 
 .my-picture {
   display: block;
-  width: 35%;
+  width: 40%;
   margin: 0 auto;
   height: auto;
 }
 
 @media only screen and (max-width: 705px) {
-  .display-picture {
-    background: linear-gradient(45deg, black 0%, black 10%, transparent 10%), linear-gradient(-45deg, black 0%, black 10%, transparent 10%);
-  }
   .my-picture {
     width: 75%;
   }

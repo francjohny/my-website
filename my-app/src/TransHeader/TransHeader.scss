@@ -5,3 +5,30 @@
   width: 100%;
   z-index: 1000;
 }
+
+.logo {
+  flex: 1;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+@media only screen and (max-width: 705px) {
+  .logo {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .logo a {
+    font-size: 1.2em;
+    padding-left: 0px;
+    padding-right: 60px;
+  }
+}
