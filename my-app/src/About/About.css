@@ -1,3 +1,10 @@
+.slideOut-appear {
+  transform: translate3D(-100%, 0, 0); }
+
+.slideOut-appear.slideOut-appear-active {
+  transform: translate(0%);
+  transition: transform 250ms ease-in-out; }
+
 .about {
   background-color: #fff;
   padding: 300px 0;
@@ -16,7 +23,8 @@
   width: 70%; }
 
 .contact-intro p, .about-intro p {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
   margin: 10px;
   text-align: center;
   line-height: 28px;
