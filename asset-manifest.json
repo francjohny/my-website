@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.476f016f.css",
-  "main.css.map": "static/css/main.476f016f.css.map",
-  "main.js": "static/js/main.e4240246.js",
-  "main.js.map": "static/js/main.e4240246.js.map",
+  "main.css": "static/css/main.fe3daeea.css",
+  "main.css.map": "static/css/main.fe3daeea.css.map",
+  "main.js": "static/js/main.b2155ad8.js",
+  "main.js.map": "static/js/main.b2155ad8.js.map",
   "static/media/Yin_yang.svg": "static/media/Yin_yang.9857ad85.svg",
   "static/media/big-data-analytics.svg": "static/media/big-data-analytics.b1428285.svg",
   "static/media/blockchain-logo.svg": "static/media/blockchain-logo.570324b9.svg",
@@ -15,5 +15,6 @@
   "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
+  "static/media/me-without-glasses.svg": "static/media/me-without-glasses.6e818cda.svg"
 }
