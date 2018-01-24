@@ -3,6 +3,7 @@ import DisplayPicture from '../DisplayPicture/DisplayPicture.js';
 import Portfolio from '../Portfolio/Portfolio.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
+import Tweet from '../Tweets/Tweet';
 import PageNotFound from '../404/404.js';
 import TransHeader from '../TransHeader/TransHeader.js';
 import TransFooter from '../TransFooter/TransFooter.js';
@@ -50,6 +51,7 @@ const HomePage = () => (
 		<div>
 			<TransHeader logoColor="#000" color="#000"/>
 			<DisplayPicture/>
+            <Tweet timestamp={new Date().toString()}/>
 			<TransFooter backgroundColor="#fff"/>
 		</div>
 	</DocumentTitle>

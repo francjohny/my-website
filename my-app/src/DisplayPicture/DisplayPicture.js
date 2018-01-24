@@ -11,6 +11,7 @@ class DisplayPicture extends Component {
                 <NavLink to="/about">
                     <img src={me} alt="me" className="my-picture"/>
                 </NavLink>
+
             </div>
         );
     }
