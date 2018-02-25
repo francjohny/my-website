@@ -64,6 +64,7 @@ class TransHeader extends Component {
                         <li className="header-nav-item"><NavLink to="/portfolio" style={{color: color}} activeStyle={{opacity: '1'}}> Portfolio </NavLink></li>
                         <li className="header-nav-item"><NavLink to="/about" style={{color: color}} activeStyle={{opacity: '1'}}> About </NavLink></li>
                         <li className="header-nav-item"><NavLink to="/contact" style={{color: color}} activeStyle={{opacity: '1'}}> Contact </NavLink></li>
+                        <li className="header-nav-item"><a href="https://gyrosco.pe/francjohny/" style={{color: color}}> Gyroscope </a></li>
                     </ul>
                 </nav>
             </header>
