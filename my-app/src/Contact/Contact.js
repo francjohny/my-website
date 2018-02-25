@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Contact.css';
 import email from './email.png';
+import TransFooter from '../TransFooter/TransFooter.js';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 class Contact extends Component {
@@ -24,6 +25,7 @@ class Contact extends Component {
                             <img src={email} alt="email" style={{"width": "11.5em"}} />
                         </a>
                     </section>
+                    <TransFooter backgroundColor="#000"/>
                 </div>
             </CSSTransitionGroup>
         );

@@ -21,12 +21,11 @@
 
 .trans-footer nav ul li a {
   text-decoration: none;
-  color: #575757;
+  color: lighten(#575757, 10%);
 }
 
 .trans-footer nav ul li a:hover {
   text-decoration: none;
-  color: #000;
 }
 
 @media only screen and (max-width: 705px) {
