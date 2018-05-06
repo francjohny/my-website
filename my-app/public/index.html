@@ -64,5 +64,10 @@
     ga('send', 'pageview');
 </script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+    const title = document.getElementsByTagName("title")[0].innerHTML;
+    window.onblur = function () { document.title = 'Bitch, please!'; }
+    window.onfocus = function () { document.title = title; }
+</script>
 </body>
 </html>
