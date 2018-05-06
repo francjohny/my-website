@@ -39,17 +39,9 @@ class DisplayPicture extends Component {
                     transitionLeave={false}>
                     <section className="hi"> Hi! </section>
                 </CSSTransitionGroup>
-                <CSSTransitionGroup
-                    transitionName="slideOut"
-                    transitionAppear={true}
-                    transistionAppearTimeout={200}
-                    transitionEnter={false}
-                    transitionLeave={false}>
-                    <section className="hi"> Hi! </section>
                 <NavLink to="/about">
                     <img src={this.state.imgSrc} alt="me" className="my-picture" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}/>
                 </NavLink>
-                </CSSTransitionGroup>
             </div>
         );
     }

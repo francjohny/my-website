@@ -14,7 +14,7 @@
   font-family: "Work Sans", sans-serif;
   transition: transform 1s cubic-bezier(0.28, 0, 0.18, 1) .2s,opacity 1s cubic-bezier(0.28, 0, 0.18, 1) .2s;
   transform: translateY(100%) scale3d(1.2,1.2,1.2);
-  opacity: 1;
+  opacity: 0;
 }
 
 .hi-animate-appear {
@@ -25,7 +25,7 @@
 .hi-animate-appear.hi-animate-appear-active {
   transition: transform 1s cubic-bezier(0.28, 0, 0.18, 1) .2s,opacity 1s cubic-bezier(0.28, 0, 0.18, 1) .2s;
   transform: translateY(100%) scale3d(1.2,1.2,1.2);
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .my-logo {
