@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Carousel from '../Carousel/Carousel.js';
-import './Portfolio.css';
+import './Talks.css';
 
-class Portfolio extends Component {
+class Talks extends Component {
     render() {
         return (
             <section>
@@ -12,4 +12,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Portfolio;
+export default Talks;

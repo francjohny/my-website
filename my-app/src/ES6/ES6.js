@@ -6,7 +6,7 @@ import './ES6.css';
 class ES6 extends Component {
     render() {
         return (
-            <Link to="/portfolio/es6">
+            <Link to="/talks/es6">
                 <section className="es6">
                     <img src={es6} alt="es6" className="es6-ppt"/>
                 </section>

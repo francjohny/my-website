@@ -11,7 +11,7 @@ class Header extends Component {
                 <nav className="header-nav">
                     <ul className="header-list">
                         <Link className="header-nav-item" to="/"> Home </Link>
-                        <Link className="header-nav-item" to="/portfolio"> Portfolio </Link>
+                        <Link className="header-nav-item" to="/talks"> Talks </Link>
                         <Link className="header-nav-item" to="/blog"> Blog </Link>
                         <a className="header-nav-item" href="http://www.francls.com"> About </a>
                         <a className="header-nav-item" href="mailto:francjohny@gmail.com"> Contact </a>

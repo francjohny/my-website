@@ -7,7 +7,7 @@ import './Blockchain.css';
 class Blockchain extends Component {
     render() {
         return (
-        <Link to="/portfolio/blockchain">
+        <Link to="/talks/blockchain">
             <section className="blockchain">
                 <img src={blockchainLogo} alt="blockchain logo" className="blockchain-logo"/>
                 <div className="blockchain-heading">

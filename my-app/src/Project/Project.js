@@ -5,7 +5,7 @@ import './Project.css';
 class Project extends Component {
     render() {
         return (
-            <Link to="/portfolio" className="project-title-link">
+            <Link to="/talks" className="project-title-link">
                 <span className="project-title">
                     {this.props.title}
                 </span>

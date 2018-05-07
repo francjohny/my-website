@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DisplayPicture from '../DisplayPicture/DisplayPicture.js';
-import Portfolio from '../Portfolio/Portfolio.js';
+import Talks from '../Talks/Talks.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
 import Tweet from '../Tweets/Tweet';
@@ -18,20 +18,20 @@ class Main extends Component {
 		<main>
 			<Switch>
 				<Route exact path="/" component={HomePage}/>
-				<Route exact path="/portfolio" component={PortfolioPage}/>
-				<Route path="/portfolio/es6" component={() => {
+				<Route exact path="/talks" component={TalksPage}/>
+				<Route path="/talks/es6" component={() => {
 					return TalkPage({
 						"title": "Exploring ES6 & Beyond",
 						"src": "https://www.icloud.com/keynote/0Vs2kAmcjlUOkXyStYL6TWfHw?embed=true"
 					})
 				}}/>
-				<Route path="/portfolio/blockchain" component={() => {
+				<Route path="/talks/blockchain" component={() => {
 					return TalkPage({
 						"title": "Blockchain Demystified",
 						"src": "https://www.icloud.com/keynote/0e1UN2MfHz6cnETziv6Sc-Msg?embed=true"
 					})
 				}}/>
-				<Route path="/portfolio/big-data" component={() => {
+				<Route path="/talks/big-data" component={() => {
 					return MoviePage({
 						"title": "Big Data Analytics",
 						"src": "https://www.youtube.com/embed/zFNbIp_MnxA?ecver=2"
@@ -57,11 +57,11 @@ const HomePage = () => (
 	</DocumentTitle>
 );
 
-const PortfolioPage = () => (
-	<DocumentTitle title='Portfolio'>
+const TalksPage = () => (
+	<DocumentTitle title='Talks'>
 		<div>
 			<TransHeader logoColor="#000" color="#000"/>
-			<Portfolio/>
+			<Talks/>
 			<TransFooter backgroundColor="#f8fdff"/>
 		</div>
 	</DocumentTitle>

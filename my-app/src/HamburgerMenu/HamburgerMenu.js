@@ -13,7 +13,7 @@ class HamburgerMenu extends Component {
                 <div className="hamburger-header">
                     <nav className="nav">
                         <Link className="nav-item" to="/"> Home </Link>
-                        <Link className="nav-item" to="/portfolio"> Portfolio </Link>
+                        <Link className="nav-item" to="/talks"> Talks </Link>
                         <Link className="nav-item" to="/blog"> Blog </Link>
                         <a className="nav-item" href="http://www.francls.com"> About </a>
                         <a className="nav-item" href="mailto:francjohny@gmail.com"> Contact </a>

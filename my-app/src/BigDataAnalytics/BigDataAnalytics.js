@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class BigDataAnalytics extends Component {
     render() {
         return (
-            <Link to="/portfolio/big-data">
+            <Link to="/talks/big-data">
                 <section className="big-data">
                     <img src={bigData} alt="big-data-analytics" className="big-data-movie"/>
                 </section>
