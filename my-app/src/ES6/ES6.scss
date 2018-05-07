@@ -12,3 +12,9 @@
 //.es6-ppt:hover {
 //  content: url('./es6.gif');
 //}
+
+@media only screen and (max-width: 1000px) {
+  .es6-ppt {
+    height: 600px;
+  }
+}
