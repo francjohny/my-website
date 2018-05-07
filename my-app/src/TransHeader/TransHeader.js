@@ -23,10 +23,12 @@ class TransHeader extends Component {
     }
 
     listenScrollEvent() {
-        if (window.scrollY > 50) {
-            document.getElementsByClassName("trans-header")[0].style.backgroundColor = invertColor(this.state.logoColor);
-        } else {
-            document.getElementsByClassName("trans-header")[0].style.backgroundColor = "transparent";
+        if (document.getElementsByClassName("trans-header")[0] !== undefined) {
+            if (window.scrollY > 50) {
+                document.getElementsByClassName("trans-header")[0].style.backgroundColor = invertColor(this.state.logoColor);
+            } else {
+                document.getElementsByClassName("trans-header")[0].style.backgroundColor = "transparent";
+            }
         }
     }
 
@@ -38,7 +40,7 @@ class TransHeader extends Component {
                     <ul className="header-list">
                         <li className="logo"><Link to="/" style={{color: this.props.logoColor}}> Francis Johny </Link>
                         </li>
-                        <li className="header-nav-item"><NavLink to="/portfolio" style={{color: color}}
+                        <li className="header-nav-item"><NavLink to="/talks" style={{color: color}}
                                                                  activeStyle={{opacity: '1'}}> Talks </NavLink></li>
                         <li className="header-nav-item"><NavLink to="/about" style={{color: color}}
                                                                  activeStyle={{opacity: '1'}}> About </NavLink></li>
