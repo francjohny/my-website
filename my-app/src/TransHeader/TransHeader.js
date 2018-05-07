@@ -39,7 +39,7 @@ class TransHeader extends Component {
                         <li className="logo"><Link to="/" style={{color: this.props.logoColor}}> Francis Johny </Link>
                         </li>
                         <li className="header-nav-item"><NavLink to="/portfolio" style={{color: color}}
-                                                                 activeStyle={{opacity: '1'}}> Portfolio </NavLink></li>
+                                                                 activeStyle={{opacity: '1'}}> Talks </NavLink></li>
                         <li className="header-nav-item"><NavLink to="/about" style={{color: color}}
                                                                  activeStyle={{opacity: '1'}}> About </NavLink></li>
                         <li className="header-nav-item"><NavLink to="/contact" style={{color: color}}

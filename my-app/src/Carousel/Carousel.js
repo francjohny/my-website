@@ -4,15 +4,11 @@ import {Carousel} from 'react-bootstrap';
 import Blockchain from '../Blockchain/Blockchain.js';
 import BigDataAnalytics from '../BigDataAnalytics/BigDataAnalytics.js';
 import ES6 from '../ES6/ES6.js';
-import CashBot from '../CashBot/CashBot.js';
 
 class MyCarousel extends Component {
     render() {
         return (
             <Carousel interval={3500}>
-                <Carousel.Item>
-                    <CashBot/>
-                </Carousel.Item>
                 <Carousel.Item>
                     <ES6/>
                 </Carousel.Item>
