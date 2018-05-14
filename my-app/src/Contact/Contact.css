@@ -12,6 +12,9 @@
   text-align: center;
   width: 100%; }
 
+.contact-intro {
+  animation: hideshow 14s ease; }
+
 .contact-hover {
   text-decoration: none;
   padding-top: 5px;

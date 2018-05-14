@@ -7,6 +7,13 @@
   transition: transform 250ms ease-in-out;
 }
 
+@keyframes hideshow {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  15% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
 .about {
   background-color: #fff;
   padding: 300px 0;
@@ -21,10 +28,12 @@
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 120px;
   font-weight: 500;
+  animation: hideshow 7s ease;
 }
 
 .about-intro {
   width: 70%;
+  animation: hideshow 14s ease;
 }
 
 .contact-intro p, .about-intro p{

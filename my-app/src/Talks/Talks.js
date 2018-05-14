@@ -5,7 +5,7 @@ import './Talks.css';
 class Talks extends Component {
     render() {
         return (
-            <section>
+            <section className="talks">
                 <Carousel />
             </section>
         );
