@@ -4,26 +4,6 @@
     src: url('../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.glyphicon-chevron-left:before {
-    content: "\e079";
-}
-.glyphicon-chevron-right:before {
-    content: "\e080";
-}
-
 .carousel {
     position: relative;
 }
