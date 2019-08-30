@@ -34,7 +34,7 @@ class DisplayPicture extends Component {
                 <CSSTransitionGroup
                     transitionName="hi-animate"
                     transitionAppear={true}
-                    transistionAppearTimeout={150}
+                    transitionAppearTimeout={1000}
                     transitionEnter={false}
                     transitionLeave={false}>
                     <section className="hi"> Hi! </section>
