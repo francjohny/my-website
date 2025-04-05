@@ -47,7 +47,7 @@ export default function About() {
             </h1>
 
             <div className="flex flex-wrap gap-6 my-10">
-              {["Developer", "Designer", "Digital"].map((text) => (
+              {["Developer", "Designer", "Futurist"].map((text) => (
                 <div
                   key={text}
                   className="rotate-random"
