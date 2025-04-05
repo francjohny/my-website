@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf .next out",
-    "deploy": "NEXT_PUBLIC_BASE_PATH=/my-website npm run clean && next build && mkdir -p out/my-website && cp -r out/* out/my-website/ 2>/dev/null || true && cp -r public/* out/my-website/ && cp ../CNAME out/ && touch out/.nojekyll && gh-pages -d out --branch gh-pages --repo https://github.com/francjohny/my-website.git --dotfiles"
+    "export": "next build",
+    "prepare-deploy": "cp -r public/. out/ && touch out/.nojekyll && cp CNAME out/",
+    "publish": "gh-pages -d out --branch gh-pages --repo https://github.com/francjohny/my-website.git --dotfiles",
+    "deploy": "npm run clean && npm run export && npm run prepare-deploy && npm run publish"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
