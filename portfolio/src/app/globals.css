@@ -4,9 +4,9 @@
 
 /* Import or define custom fonts */
 @font-face {
-  font-family: "Brutalist";
+  font-family: "Space Grotesk";
   src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -54,6 +54,7 @@
   --brutalist-gray: #333;
   --brutalist-accent: #ff0000;
   --terminal-green: #0cfa00;
+  --base-path: "";
 }
 
 @layer components {

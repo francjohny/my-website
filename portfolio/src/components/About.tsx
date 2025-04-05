@@ -13,7 +13,9 @@ export default function About() {
       >
         <div className="relative flex justify-center mb-12">
           <Image
-            src="/me-without-glasses.svg"
+            src={`${
+              process.env.NEXT_PUBLIC_BASE_PATH || ""
+            }/me-without-glasses.svg`}
             alt="Francis Johny"
             width={800}
             height={800}
@@ -21,7 +23,7 @@ export default function About() {
             priority
           />
           <Image
-            src="/me.svg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/me.svg`}
             alt="Francis Johny Hover"
             width={800}
             height={800}
