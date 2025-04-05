@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Terminal from "@/components/Terminal";
 import Navigation from "@/components/Navigation";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
@@ -10,7 +9,6 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("about");
-  const [loadingComplete, setLoadingComplete] = useState(false);
   const [showSvgInterlude, setShowSvgInterlude] = useState(false);
 
   useEffect(() => {
@@ -44,18 +42,6 @@ export default function Home() {
       setActiveTab(sectionId);
     }
   };
-
-  const handleLoadingComplete = () => {
-    setLoadingComplete(true);
-    setShowSvgInterlude(true);
-    setTimeout(() => {
-      setShowSvgInterlude(false);
-    }, 3000);
-  };
-
-  if (!loadingComplete) {
-    return <Terminal onLoadingComplete={handleLoadingComplete} />;
-  }
 
   return (
     <div className="relative bg-brutalist-white">
