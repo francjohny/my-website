@@ -45,26 +45,7 @@ export default function Home() {
 
   return (
     <div className="relative bg-brutalist-white">
-      <div className="noise"></div>
-      <div
-        className="accent-stripe stripe-horizontal"
-        style={{ top: "25%" }}
-      ></div>
-      <div
-        className="accent-stripe stripe-horizontal"
-        style={{ bottom: "15%" }}
-      ></div>
-      <div
-        className="accent-stripe stripe-vertical"
-        style={{ left: "15%" }}
-      ></div>
-      <div
-        className="accent-stripe stripe-vertical"
-        style={{ right: "5%" }}
-      ></div>
-
       <Navigation activeTab={activeTab} scrollToSection={scrollToSection} />
-
       <div
         className="container mx-auto px-6 pb-12 text-brutalist-black"
         style={{ paddingLeft: 0 }}
@@ -73,7 +54,6 @@ export default function Home() {
         <Projects />
         <Contact />
       </div>
-
       <Footer />
     </div>
   );
